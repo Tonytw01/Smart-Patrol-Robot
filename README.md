@@ -8,21 +8,21 @@
 
  系統架構
 
-\* \*\*大腦 (PC 端)\*\*: 負責高負載之 OpenCV/dlib 人臉辨識與最高決策。
+大腦 (PC 端): 負責高負載之 OpenCV/dlib 人臉辨識與最高決策。
 
-\* \*\*腦幹 (Raspberry Pi 3B+)\*\*: 負責影像 JPEG 壓縮串流與 UART/UDP 指令橋接。
+腦幹 (Raspberry Pi 3B+): 負責影像 JPEG 壓縮串流與 UART/UDP 指令橋接。
 
-\* \*\*小腦 (ESP32)\*\*: 運行 FreeRTOS 雙核心多工，執行 50Hz PID 航向鎖定、超音波卡爾曼濾波與伺服馬達環景掃描避障。
+小腦 (ESP32): 運行 FreeRTOS 雙核心多工，執行 50Hz PID 航向鎖定、超音波卡爾曼濾波與伺服馬達環景掃描避障。
 
-\* \*\*手套遙控器 (ESP32 + MPU6050)\*\*: 透過 ESP-NOW 無線協定實現低延遲體感控制。
+手套遙控器 (ESP32 + MPU6050): 透過 ESP-NOW 無線協定實現低延遲體感控制。
 
 
 
-\## 環境建置與執行
+ 環境建置與執行
 
-1\. \*\*PC 端人臉辨識環境\*\*: 需安裝 Python 3.11 與相關視覺套件。
+1\. *PC 端人臉辨識環境: 需安裝 Python 3.11 與相關視覺套件。
 
-&#x20;  ```bash
+&#x20;  bash
 
 &#x20;  pip install opencv-python face\_recognition
 
