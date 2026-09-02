@@ -1,4 +1,4 @@
-\# 智慧巡邏車機電控制系統 (Smart Patrol Robot)
+ 智慧巡邏車機電控制系統 (Smart Patrol Robot)
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-\## 系統架構
+ 系統架構
 
 \* \*\*大腦 (PC 端)\*\*: 負責高負載之 OpenCV/dlib 人臉辨識與最高決策。
 
